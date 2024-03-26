@@ -140,13 +140,6 @@ stdenv.mkDerivation rec {
     pkg-config
   ];
 
-  # Use locales from cinnamon-translations.
-  # FIXME: Upstream does not respect localedir option from Meson currently.
-  # https://github.com/linuxmint/cinnamon/pull/11244#issuecomment-1305855783
-  postInstall = ''
-    ln -s ${cinnamon-translations}/share/locale $out/share/locale
-  '';
-
   postPatch = ''
     find . -type f -exec sed -i \
       -e s,/usr/share/cinnamon,$out/share/cinnamon,g \
@@ -171,6 +164,18 @@ stdenv.mkDerivation rec {
     sed "s| cinnamon-session| ${cinnamon-session}/bin/cinnamon-session|g" -i ./files/usr/bin/cinnamon-session-{cinnamon,cinnamon2d}
 
     patchShebangs src/data-to-c.pl
+  '';
+
+  postInstall = ''
+    # Use locales from cinnamon-translations.
+    ln -s ${cinnamon-translations}/share/locale $out/share/locale
+
+    # Do not install online accounts module, with a -Donlineaccounts=false c-c-c
+    # this just shows an empty page.
+    rm -f $out/share/cinnamon/cinnamon-settings/modules/cs_online_accounts.py
+
+    # g-o-a-gtk already provides its own desktop item.
+    rm -f $out/share/applications/cinnamon-settings-online-accounts.desktop
   '';
 
   preFixup = ''
