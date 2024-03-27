@@ -44,6 +44,7 @@
 , vte
 , glib-networking
 , qemu-utils
+, libportal-gtk3
 }:
 
 stdenv.mkDerivation rec {
@@ -114,6 +115,7 @@ stdenv.mkDerivation rec {
     vte
     webkitgtk_4_1
     yajl
+    libportal-gtk3
   ];
 
   preFixup = ''
