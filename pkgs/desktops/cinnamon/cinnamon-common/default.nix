@@ -9,6 +9,7 @@
 , cjs
 , evolution-data-server
 , fetchFromGitHub
+, fetchpatch
 , gdk-pixbuf
 , gettext
 , libgnomekbd
@@ -83,6 +84,13 @@ stdenv.mkDerivation rec {
   patches = [
     ./use-sane-install-dir.patch
     ./libdir.patch
+
+    # Switch to GNOME Online Accounts GTK
+    (fetchpatch {
+      url = "https://github.com/linuxmint/cinnamon/commit/d22f889c376734f0ca5d904885c2772e790fbadc.patch";
+      includes = [ "files/usr/share/cinnamon/cinnamon-settings/cinnamon-settings.py" ];
+      hash = "sha256-xutJqxtzk3/BUQGZY/tnBkRyAfZZY7AckaGC6b7Sfn8=";
+    })
   ];
 
   buildInputs = [
