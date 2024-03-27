@@ -15,11 +15,12 @@
 , cpio
 , glib
 , gnome
-, gtk3
+, gtk4
+, libadwaita
 , libhandy
 , json-glib
 , libarchive
-, libportal-gtk3
+, libportal-gtk4
 , nautilus
 }:
 
@@ -48,11 +49,12 @@ stdenv.mkDerivation (finalAttrs: {
   buildInputs = [
     cpio
     glib
-    gtk3
+    gtk4
+    libadwaita
     libhandy
     json-glib
     libarchive
-    libportal-gtk3
+    libportal-gtk4
     nautilus
   ];
 
