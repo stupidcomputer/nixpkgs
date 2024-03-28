@@ -35,7 +35,7 @@ let
 
   # From data/sessions/Makefile.am
   requiredComponentsCommon = enableGnomePanel:
-    [ "gnome-flashback" ]
+    [ ]
     ++ lib.optional enableGnomePanel "gnome-panel";
   requiredComponentsGsd = [
     "org.gnome.SettingsDaemon.A11ySettings"
@@ -68,7 +68,7 @@ let
     # make .desktop Execs absolute
     postPatch = ''
       patch -p0 <<END_PATCH
-      +++ data/applications/gnome-flashback.desktop.in.in
+      +++ data/applications/gnome-flashback.desktop.in
       @@ -4 +4 @@
       -Exec=gnome-flashback
       +Exec=$out/bin/gnome-flashback
