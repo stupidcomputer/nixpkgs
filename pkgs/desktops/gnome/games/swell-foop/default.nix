@@ -49,14 +49,6 @@ stdenv.mkDerivation rec {
     pango
   ];
 
-  postPatch = ''
-    chmod +x meson_post_install.py # patchShebangs requires executable file
-    patchShebangs meson_post_install.py
-
-    substituteInPlace meson_post_install.py \
-      --replace-fail "gtk-update-icon-cache" "gtk4-update-icon-cache"
-  '';
-
   passthru = {
     updateScript = gnome.updateScript {
       packageName = pname;
