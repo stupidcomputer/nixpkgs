@@ -11,15 +11,15 @@
 , libadwaita
 }:
 
-stdenv.mkDerivation {
+stdenv.mkDerivation (finalAttrs: {
   pname = "gnome-online-accounts-gtk";
-  version = "0-unstable-2024-03-23";
+  version = "3.50.1";
 
   src = fetchFromGitHub {
     owner = "linuxmint";
     repo = "gnome-online-accounts-gtk";
-    rev = "c774d6cb00114f234fbd2a6d4795288ac5c00260";
-    hash = "sha256-EO0H4yRVJ5kmw+uGfnxRXHTxQFC9vYokqfTgazKHI0c=";
+    rev = finalAttrs.version;
+    hash = "sha256-lirL1bsAZfuE669BdPo03M85O5eZzU/D/hfGp+LxvSo=";
   };
 
   nativeBuildInputs = [
@@ -43,4 +43,4 @@ stdenv.mkDerivation {
     platforms = platforms.linux;
     maintainers = teams.cinnamon.members;
   };
-}
+})
