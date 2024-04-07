@@ -1,0 +1,222 @@
+this derivation will be built:
+  /nix/store/2savv60k828vchaxsf5bpzcip9bp0ld6-taskwarrior-3.0.0.drv
+building '/nix/store/2savv60k828vchaxsf5bpzcip9bp0ld6-taskwarrior-3.0.0.drv'...
+unpacking sources
+unpacking source archive /nix/store/6pmpj89vm40jkv0ngn2h8cn7wvn7bfir-taskwarrior
+source root is taskwarrior
+patching sources
+configuring
+fixing cmake files...
+cmake flags: -DCMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY=OFF -DCMAKE_FIND_USE_PACKAGE_REGISTRY=OFF -DCMAKE_EXPORT_NO_PACKAGE_REGISTRY=ON -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_LOCALEDIR=/nix/store/15gv2x8lb6ycz4wyfbb44c61qdpxasxc-taskwarrior-3.0.0/share/locale -DCMAKE_INSTALL_LIBEXECDIR=/nix/store/15gv2x8lb6ycz4wyfbb44c61qdpxasxc-taskwarrior-3.0.0/libexec -DCMAKE_INSTALL_LIBDIR=/nix/store/15gv2x8lb6ycz4wyfbb44c61qdpxasxc-taskwarrior-3.0.0/lib -DCMAKE_INSTALL_DOCDIR=/nix/store/15gv2x8lb6ycz4wyfbb44c61qdpxasxc-taskwarrior-3.0.0/share/doc/task -DCMAKE_INSTALL_INFODIR=/nix/store/15gv2x8lb6ycz4wyfbb44c61qdpxasxc-taskwarrior-3.0.0/share/info -DCMAKE_INSTALL_MANDIR=/nix/store/15gv2x8lb6ycz4wyfbb44c61qdpxasxc-taskwarrior-3.0.0/share/man -DCMAKE_INSTALL_OLDINCLUDEDIR=/nix/store/15gv2x8lb6ycz4wyfbb44c61qdpxasxc-taskwarrior-3.0.0/include -DCMAKE_INSTALL_INCLUDEDIR=/nix/store/15gv2x8lb6ycz4wyfbb44c61qdpxasxc-taskwarrior-3.0.0/include -DCMAKE_INSTALL_SBINDIR=/nix/store/15gv2x8lb6ycz4wyfbb44c61qdpxasxc-taskwarrior-3.0.0/sbin -DCMAKE_INSTALL_BINDIR=/nix/store/15gv2x8lb6ycz4wyfbb44c61qdpxasxc-taskwarrior-3.0.0/bin -DCMAKE_INSTALL_NAME_DIR=/nix/store/15gv2x8lb6ycz4wyfbb44c61qdpxasxc-taskwarrior-3.0.0/lib -DCMAKE_POLICY_DEFAULT_CMP0025=NEW -DCMAKE_OSX_SYSROOT= -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_STRIP=/nix/store/3hbxw05vfs6m1155xa6pvribs3bv777n-gcc-wrapper-12.2.0/bin/strip -DCMAKE_RANLIB=/nix/store/3hbxw05vfs6m1155xa6pvribs3bv777n-gcc-wrapper-12.2.0/bin/ranlib -DCMAKE_AR=/nix/store/3hbxw05vfs6m1155xa6pvribs3bv777n-gcc-wrapper-12.2.0/bin/ar -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++ -DCMAKE_INSTALL_PREFIX=/nix/store/15gv2x8lb6ycz4wyfbb44c61qdpxasxc-taskwarrior-3.0.0  
+-- The C compiler identification is GNU 12.2.0
+-- The CXX compiler identification is GNU 12.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /nix/store/3hbxw05vfs6m1155xa6pvribs3bv777n-gcc-wrapper-12.2.0/bin/gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /nix/store/3hbxw05vfs6m1155xa6pvribs3bv777n-gcc-wrapper-12.2.0/bin/g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring C++17
+-- System: Linux
+-- Performing Test _HAS_CXX17
+-- Performing Test _HAS_CXX17 - Success
+-- Looking for libshared
+-- Found libshared
+-- Looking for SHA1 references
+-- Found SHA1 reference: 
+-- Looking for timegm
+-- Looking for timegm - found
+-- Looking for get_current_dir_name
+-- Looking for get_current_dir_name - found
+-- Looking for wordexp
+-- Looking for wordexp - found
+-- Performing Test HAVE_TM_GMTOFF
+-- Performing Test HAVE_TM_GMTOFF - Success
+-- Performing Test HAVE_ST_BIRTHTIME
+-- Performing Test HAVE_ST_BIRTHTIME - Failed
+-- Looking for libuuid
+-- Looking for uuid_unparse_lower
+-- Looking for uuid_unparse_lower - found
+-- Found libuuid
+-- Configuring cmake.h
+-- Rust Target: x86_64-unknown-linux-gnu
+-- Determining required link libraries for target x86_64-unknown-linux-gnu
+-- Required static libs for target x86_64-unknown-linux-gnu: gcc_s;util;rt;pthread;m;dl;c
+-- Found Rust: /nix/store/fx7azwdhhyn0hs06f5pggrcgj54dg17c-rustc-1.69.0/bin/rustc (found version "1.69.0") 
+-- Configuring man pages
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_EXPORT_NO_PACKAGE_REGISTRY
+    CMAKE_INSTALL_BINDIR
+    CMAKE_INSTALL_DOCDIR
+    CMAKE_INSTALL_INCLUDEDIR
+    CMAKE_INSTALL_INFODIR
+    CMAKE_INSTALL_LIBDIR
+    CMAKE_INSTALL_LIBEXECDIR
+    CMAKE_INSTALL_LOCALEDIR
+    CMAKE_INSTALL_MANDIR
+    CMAKE_INSTALL_OLDINCLUDEDIR
+    CMAKE_INSTALL_SBINDIR
+    CMAKE_POLICY_DEFAULT_CMP0025
+
+
+-- Build files have been written to: /build/taskwarrior/build
+cmake: enabled parallel building
+cmake: enabled parallel installing
+building
+build flags: -j20 SHELL=/nix/store/0rwyq0j954a7143p0wzd4rhycny8i967-bash-5.2-p15/bin/bash
+[  0%] Building CXX object src/CMakeFiles/task.dir/CLI2.cpp.o
+[  1%] Building CXX object src/CMakeFiles/task.dir/Context.cpp.o
+[  1%] Building CXX object src/CMakeFiles/libshared.dir/libshared/src/Color.cpp.o
+[  1%] Building CXX object src/CMakeFiles/task.dir/DOM.cpp.o
+[  1%] Building CXX object src/CMakeFiles/libshared.dir/libshared/src/Duration.cpp.o
+[  3%] Building CXX object src/CMakeFiles/libshared.dir/libshared/src/Configuration.cpp.o
+[  5%] Building CXX object src/CMakeFiles/libshared.dir/libshared/src/Datetime.cpp.o
+[  7%] Building CXX object src/columns/CMakeFiles/columns.dir/Column.cpp.o
+[  7%] Building CXX object src/CMakeFiles/task.dir/Eval.cpp.o
+[  7%] Building CXX object src/columns/CMakeFiles/columns.dir/ColDepends.cpp.o
+[  7%] Building CXX object src/CMakeFiles/task.dir/Filter.cpp.o
+[  8%] Building CXX object src/CMakeFiles/libshared.dir/libshared/src/FS.cpp.o
+[  8%] Building CXX object src/CMakeFiles/libshared.dir/libshared/src/JSON.cpp.o
+[  8%] Building CXX object src/CMakeFiles/task.dir/Hooks.cpp.o
+[  8%] Built target cargo-prebuild_taskchampion-lib
+[  8%] Building CXX object src/commands/CMakeFiles/commands.dir/Command.cpp.o
+[  8%] Building CXX object src/columns/CMakeFiles/columns.dir/ColDescription.cpp.o
+[  8%] Building CXX object src/columns/CMakeFiles/columns.dir/ColDue.cpp.o
+[ 10%] Building CXX object src/CMakeFiles/task.dir/Lexer.cpp.o
+[ 12%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdAdd.cpp.o
+[ 12%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdAliases.cpp.o
+[ 12%] Building CXX object src/CMakeFiles/task.dir/TDB2.cpp.o
+[ 14%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdAnnotate.cpp.o
+[ 16%] Building CXX object src/CMakeFiles/libshared.dir/libshared/src/Msg.cpp.o
+[ 16%] Building CXX object src/CMakeFiles/libshared.dir/libshared/src/Pig.cpp.o
+[ 17%] Building CXX object src/CMakeFiles/libshared.dir/libshared/src/RX.cpp.o
+[ 17%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdAppend.cpp.o
+[ 17%] Building CXX object src/CMakeFiles/libshared.dir/libshared/src/Table.cpp.o
+[ 19%] Building CXX object src/CMakeFiles/libshared.dir/libshared/src/Timer.cpp.o
+[ 19%] Building CXX object src/CMakeFiles/libshared.dir/libshared/src/format.cpp.o
+[ 21%] Building CXX object src/CMakeFiles/task.dir/Task.cpp.o
+[ 23%] Building CXX object src/columns/CMakeFiles/columns.dir/ColEnd.cpp.o
+[ 23%] Building CXX object src/CMakeFiles/task.dir/Variant.cpp.o
+[ 23%] Building CXX object src/CMakeFiles/libshared.dir/libshared/src/ip.cpp.o
+[ 23%] Building CXX object src/columns/CMakeFiles/columns.dir/ColEntry.cpp.o
+[ 25%] Building CXX object src/CMakeFiles/libshared.dir/libshared/src/shared.cpp.o
+[ 25%] Building CXX object src/CMakeFiles/libshared.dir/libshared/src/unicode.cpp.o
+[ 26%] Building CXX object src/CMakeFiles/libshared.dir/libshared/src/utf8.cpp.o
+[ 28%] Building CXX object src/CMakeFiles/task.dir/ViewTask.cpp.o
+[ 30%] Building CXX object src/columns/CMakeFiles/columns.dir/ColID.cpp.o
+[ 32%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdAttributes.cpp.o
+[ 32%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdBurndown.cpp.o
+[ 32%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdCalc.cpp.o
+[ 33%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdCalendar.cpp.o
+[ 33%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdCommands.cpp.o
+[ 33%] Building CXX object src/CMakeFiles/task.dir/dependency.cpp.o
+[ 35%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdColor.cpp.o
+[ 35%] Building CXX object src/columns/CMakeFiles/columns.dir/ColIMask.cpp.o
+[ 37%] Building CXX object src/CMakeFiles/task.dir/feedback.cpp.o
+[ 37%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdColumns.cpp.o
+[ 39%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdConfig.cpp.o
+[ 39%] Linking CXX static library liblibshared.a
+[ 39%] Building CXX object src/CMakeFiles/task.dir/legacy.cpp.o
+[ 41%] Building CXX object src/columns/CMakeFiles/columns.dir/ColLast.cpp.o
+[ 41%] Built target libshared
+[ 41%] Building CXX object src/CMakeFiles/task.dir/nag.cpp.o
+    Updating crates.io index
+warning: spurious network error (2 tries remaining): failed to resolve address for github.com: Temporary failure in name resolution; class=Net (12)
+warning: spurious network error (1 tries remaining): failed to resolve address for github.com: Temporary failure in name resolution; class=Net (12)
+error: Unable to update registry `crates-io`
+
+Caused by:
+  failed to fetch `https://github.com/rust-lang/crates.io-index`
+
+Caused by:
+  network failure seems to have happened
+  if a proxy or similar is necessary `net.git-fetch-with-cli` may help here
+  https://doc.rust-lang.org/cargo/reference/config.html#netgit-fetch-with-cli
+
+Caused by:
+  failed to resolve address for github.com: Temporary failure in name resolution; class=Net (12)
+make[2]: *** [src/tc/CMakeFiles/_cargo-build_taskchampion-lib.dir/build.make:70: src/tc/CMakeFiles/_cargo-build_taskchampion-lib] Error 101
+make[1]: *** [CMakeFiles/Makefile2:550: src/tc/CMakeFiles/_cargo-build_taskchampion-lib.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 42%] Building CXX object src/CMakeFiles/task.dir/recur.cpp.o
+[ 42%] Building CXX object src/columns/CMakeFiles/columns.dir/ColMask.cpp.o
+[ 42%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdContext.cpp.o
+[ 44%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdCount.cpp.o
+[ 44%] Building CXX object src/CMakeFiles/task.dir/rules.cpp.o
+[ 46%] Building CXX object src/CMakeFiles/task.dir/sort.cpp.o
+[ 46%] Building CXX object src/CMakeFiles/task.dir/util.cpp.o
+[ 48%] Building CXX object src/columns/CMakeFiles/columns.dir/ColModified.cpp.o
+[ 48%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdCustom.cpp.o
+[ 48%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdDelete.cpp.o
+[ 50%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdDenotate.cpp.o
+[ 50%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdDiagnostics.cpp.o
+[ 51%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdDone.cpp.o
+[ 51%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdDuplicate.cpp.o
+[ 53%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdEdit.cpp.o
+[ 53%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdExec.cpp.o
+[ 53%] Building CXX object src/columns/CMakeFiles/columns.dir/ColParent.cpp.o
+[ 53%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdExport.cpp.o
+[ 55%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdGet.cpp.o
+[ 55%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdHelp.cpp.o
+[ 55%] Building CXX object src/columns/CMakeFiles/columns.dir/ColProject.cpp.o
+[ 57%] Building CXX object src/columns/CMakeFiles/columns.dir/ColRecur.cpp.o
+[ 58%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdHistory.cpp.o
+[ 58%] Building CXX object src/columns/CMakeFiles/columns.dir/ColRType.cpp.o
+[ 60%] Building CXX object src/columns/CMakeFiles/columns.dir/ColScheduled.cpp.o
+[ 60%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdIDs.cpp.o
+[ 62%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdImport.cpp.o
+[ 62%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdInfo.cpp.o
+[ 64%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdLog.cpp.o
+[ 64%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdLogo.cpp.o
+[ 64%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdModify.cpp.o
+[ 66%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdNews.cpp.o
+[ 66%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdPrepend.cpp.o
+[ 67%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdProjects.cpp.o
+[ 67%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdPurge.cpp.o
+[ 67%] Building CXX object src/columns/CMakeFiles/columns.dir/ColStart.cpp.o
+[ 69%] Building CXX object src/columns/CMakeFiles/columns.dir/ColStatus.cpp.o
+[ 71%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdReports.cpp.o
+[ 71%] Building CXX object src/columns/CMakeFiles/columns.dir/ColTags.cpp.o
+[ 73%] Building CXX object src/columns/CMakeFiles/columns.dir/ColTemplate.cpp.o
+[ 73%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdShow.cpp.o
+[ 75%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdStart.cpp.o
+[ 75%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdStats.cpp.o
+[ 75%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdStop.cpp.o
+/build/taskwarrior/src/commands/CmdNews.cpp: In member function 'virtual int CmdNews::execute(std::string&)':
+/build/taskwarrior/src/commands/CmdNews.cpp:622:14: warning: ignoring return value of 'int system(const char*)' declared with attribute 'warn_unused_result' [8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result8;;]
+  622 |       system ("/nix/store/wxy8m47jr41bdsbxgy1ym97q25bph1cv-xdg-utils-unstable-2020-10-21/bin/xdg-open 'https://github.com/sponsors/GothenburgBitFactory/'");
+      |       ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 76%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdSummary.cpp.o
+[ 76%] Building CXX object src/columns/CMakeFiles/columns.dir/ColTypeDate.cpp.o
+[ 76%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdSync.cpp.o
+[ 76%] Building CXX object src/columns/CMakeFiles/columns.dir/ColTypeDuration.cpp.o
+[ 78%] Building CXX object src/columns/CMakeFiles/columns.dir/ColTypeNumeric.cpp.o
+[ 80%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdTags.cpp.o
+[ 80%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdTimesheet.cpp.o
+[ 82%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdUDAs.cpp.o
+[ 83%] Linking CXX static library libtask.a
+[ 83%] Built target task
+[ 83%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdUndo.cpp.o
+[ 83%] Building CXX object src/columns/CMakeFiles/columns.dir/ColTypeString.cpp.o
+[ 85%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdUnique.cpp.o
+[ 85%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdUrgency.cpp.o
+[ 87%] Building CXX object src/columns/CMakeFiles/columns.dir/ColUntil.cpp.o
+[ 87%] Building CXX object src/commands/CMakeFiles/commands.dir/CmdVersion.cpp.o
+[ 87%] Building CXX object src/columns/CMakeFiles/columns.dir/ColUrgency.cpp.o
+[ 89%] Building CXX object src/columns/CMakeFiles/columns.dir/ColUDA.cpp.o
+[ 89%] Building CXX object src/columns/CMakeFiles/columns.dir/ColUUID.cpp.o
+[ 89%] Building CXX object src/columns/CMakeFiles/columns.dir/ColWait.cpp.o
+[ 91%] Linking CXX static library libcolumns.a
+[ 91%] Built target columns
+[ 92%] Linking CXX static library libcommands.a
+[ 92%] Built target commands
+make: *** [Makefile:156: all] Error 2
+error: boost::bad_format_string: format-string is ill-formed

@@ -1,23 +1,24 @@
-{ lib, stdenv, fetchFromGitHub, cmake, libuuid, gnutls, python3, xdg-utils, installShellFiles }:
+{ lib, stdenv, fetchFromGitHub, cmake, libuuid, gnutls, python3, xdg-utils, installShellFiles, corrosion, cargo, rustc }:
 
 stdenv.mkDerivation rec {
   pname = "taskwarrior";
-  version = "2.6.2";
+  version = "3.0.0";
 
-  src = fetchFromGitHub {
-    owner = "GothenburgBitFactory";
-    repo = "taskwarrior";
-    rev = "v${version}";
-    sha256 = "sha256-0YveqiylXJi4cdDCfnPtwCVOJbQrZYsxnXES+9B4Yfw=";
-    fetchSubmodules = true;
-  };
+#  src = fetchFromGitHub {
+#    owner = "GothenburgBitFactory";
+#    repo = "taskwarrior";
+#    rev = "v${version}";
+#    sha256 = "sha256-QopmxdezmPmyFyO5UrFi+M35LUteZy27hbnP7GqqEO8=";
+#    fetchSubmodules = true;
+#  };
+  src = ./taskwarrior;
 
   postPatch = ''
     substituteInPlace src/commands/CmdNews.cpp \
       --replace "xdg-open" "${lib.getBin xdg-utils}/bin/xdg-open"
   '';
 
-  nativeBuildInputs = [ cmake libuuid gnutls python3 installShellFiles ];
+  nativeBuildInputs = [ cmake libuuid gnutls python3 installShellFiles corrosion cargo rustc ];
 
   doCheck = true;
   preCheck = ''
