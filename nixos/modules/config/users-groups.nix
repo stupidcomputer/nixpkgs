@@ -35,6 +35,7 @@ let
     mkIf
     mkMerge
     mkOption
+    mkOptionDefault
     mkRenamedOptionModule
     optional
     optionals
@@ -836,7 +837,7 @@ in
           uid = ids.uids.root;
           description = "System administrator";
           home = "/root";
-          shell = mkDefault cfg.defaultUserShell;
+          shell = mkOptionDefault cfg.defaultUserShell;
           group = "root";
         };
         nobody = {
@@ -1038,6 +1039,15 @@ in
 
       assertions =
         [
+          {
+            assertion = !cfg.users.root.isNormalUser;
+            message =
+              ''
+              root cannot be a normal user!
+
+              Hint: don't set users.users.root.isNormalUser = true
+              '';
+          }
           {
             assertion = !cfg.enforceIdUniqueness || (uidsAreUnique && gidsAreUnique);
             message = "UIDs and GIDs must be unique!";
